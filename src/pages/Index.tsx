@@ -1,9 +1,11 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import PDFCard from '../components/PDFCard';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Index = () => {
+  const { t } = useLanguage();
+  
   // Example portfolio items - replace with your actual PDFs
   const portfolioItems = [
     {
@@ -27,7 +29,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero />
       <main className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-8">Portfolio Documents</h2>
+        <h2 className="text-3xl font-bold mb-8">{t('portfolioTitle')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {portfolioItems.map((item, index) => (
             <PDFCard
