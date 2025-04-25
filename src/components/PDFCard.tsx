@@ -20,7 +20,13 @@ const PDFCard = ({ title, description, downloadUrl }: PDFCardProps) => {
         </CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="space-y-2">
+        <Button variant="outline" asChild className="w-full">
+          <a href={downloadUrl} target="_blank" rel="noopener noreferrer">
+            <FileText className="mr-2 h-4 w-4" />
+            View Online
+          </a>
+        </Button>
         <Button asChild className="w-full">
           <a href={downloadUrl} download>
             <Download className="mr-2 h-4 w-4" />
@@ -33,3 +39,4 @@ const PDFCard = ({ title, description, downloadUrl }: PDFCardProps) => {
 };
 
 export default PDFCard;
+
