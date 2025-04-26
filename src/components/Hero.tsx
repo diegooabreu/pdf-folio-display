@@ -3,6 +3,7 @@ import React from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Globe } from "lucide-react";
 import { useLanguage } from '../contexts/LanguageContext';
+import Logo from '/lovable-uploads/4aa29f1e-713c-4474-a76f-3d258a789128.png';
 
 const Hero = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -28,7 +29,14 @@ const Hero = () => {
             </Select>
           </div>
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">{t('heroTitle')}</h1>
+        <div className="flex items-center gap-4 mb-6">
+          <img 
+            src={Logo} 
+            alt="Maica Logo" 
+            className="h-16 w-16 object-contain"
+          />
+          <h1 className="text-4xl md:text-6xl font-bold">{t('heroTitle')}</h1>
+        </div>
         <p className="text-lg md:text-xl max-w-2xl opacity-90">
           {t('heroDescription')}
         </p>
