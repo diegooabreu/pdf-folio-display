@@ -8,22 +8,24 @@ import { useLanguage } from '../contexts/LanguageContext';
 const Index = () => {
   const { t } = useLanguage();
   
-  // Example portfolio items - replace with your actual PDFs
   const portfolioItems = [
     {
-      title: "Project Case Study 2024",
-      description: "A detailed analysis of recent project successes and outcomes",
-      downloadUrl: "#", // Replace with actual PDF URL
+      title: "Motorola",
+      description: "Leading manufacturer of mobile phones and telecommunications equipment",
+      downloadUrl: "#",
+      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: "Design Portfolio",
-      description: "Comprehensive collection of design work and creative projects",
-      downloadUrl: "#", // Replace with actual PDF URL
+      title: "Samsung",
+      description: "Global leader in electronics, mobile devices, and home appliances",
+      downloadUrl: "#",
+      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: "Technical Documentation",
-      description: "Technical specifications and implementation details",
-      downloadUrl: "#", // Replace with actual PDF URL
+      title: "LG",
+      description: "Premium electronics and appliances manufacturer",
+      downloadUrl: "#",
+      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
     },
   ];
 
@@ -39,6 +41,7 @@ const Index = () => {
               title={item.title}
               description={item.description}
               downloadUrl={item.downloadUrl}
+              imageUrl={item.imageUrl}
             />
           ))}
         </div>
