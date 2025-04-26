@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'en' | 'pt';
@@ -8,6 +7,8 @@ type Translations = {
     heroTitle: string;
     heroDescription: string;
     portfolioTitle: string;
+    contactTitle: string;
+    contactDescription: string;
   }
 };
 
@@ -16,11 +17,15 @@ const translations: Translations = {
     heroTitle: "Maica",
     heroDescription: "Representação Comercial",
     portfolioTitle: "Portfolio Documents",
+    contactTitle: "Contact Us",
+    contactDescription: "Get in touch with us",
   },
   pt: {
     heroTitle: "Maica",
     heroDescription: "Representação Comercial",
     portfolioTitle: "Documentos do Portfólio",
+    contactTitle: "Contate-nos",
+    contactDescription: "Entre em contato conosco",
   },
 };
 

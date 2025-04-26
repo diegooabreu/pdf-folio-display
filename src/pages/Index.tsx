@@ -1,6 +1,8 @@
+
 import React from 'react';
 import Hero from '../components/Hero';
 import PDFCard from '../components/PDFCard';
+import Contact from '../components/Contact';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Index = () => {
@@ -41,6 +43,7 @@ const Index = () => {
           ))}
         </div>
       </main>
+      <Contact />
     </div>
   );
 };
