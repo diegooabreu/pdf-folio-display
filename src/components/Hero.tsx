@@ -35,7 +35,7 @@ const Hero = () => {
             alt="Maica Logo" 
             className="h-16 w-16 object-contain"
           />
-          <h1 className="text-4xl md:text-6xl font-bold">{t('heroTitle')}</h1>
+          <h1 className="text-4xl md:text-6xl font-modern font-bold tracking-tight">{t('heroTitle')}</h1>
         </div>
         <p className="text-lg md:text-xl max-w-2xl opacity-90">
           {t('heroDescription')}

@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
       }
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        modern: ['Inter', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: '0 0% 0%', // Black
         input: '0 0% 0%', // Black
