@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,14 +23,14 @@ export default {
         modern: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        border: '0 0% 0%', // Black
-        input: '0 0% 0%', // Black
-        ring: '0 0% 0%', // Black
-        background: '0 0% 0%', // Black
-        foreground: '0 0% 98%', // Near white for text
+        border: 'hsl(0, 0%, 20%)', // Darker gray for borders
+        input: 'hsl(0, 0%, 15%)', // Dark gray for inputs
+        ring: 'hsl(220, 65%, 55%)', // Blue accent for focus rings
+        background: 'hsl(0, 0%, 100%)', // White background
+        foreground: 'hsl(0, 0%, 10%)', // Near black for text
         primary: {
-          DEFAULT: '0 0% 0%', // Black
-          foreground: '0 0% 98%', // Near white
+          DEFAULT: 'hsl(220, 65%, 55%)', // Rich blue as primary
+          foreground: 'hsl(0, 0%, 100%)', // White text on primary
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',

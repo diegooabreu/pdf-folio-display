@@ -5,25 +5,25 @@
  
 @layer base {
   :root {
-    --background: 0 0% 0%; /* Black */
-    --foreground: 0 0% 98%; /* Near white */
-    --card: 0 0% 0%; /* Black */
-    --card-foreground: 0 0% 98%; /* Near white */
-    --popover: 0 0% 0%; /* Black */
-    --popover-foreground: 0 0% 98%; /* Near white */
-    --primary: 41 100% 50%; /* Keep original gold for accents */
-    --primary-foreground: 0 0% 100%; 
-    --secondary: 0 0% 20%; /* Dark gray */
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%; /* Even darker gray */
-    --muted-foreground: 0 0% 45%;
-    --accent: 0 0% 20%; /* Dark gray */
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 30%; /* Gray border */
-    --input: 0 0% 20%; /* Dark input */
-    --ring: 41 100% 50%; /* Gold ring */
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 10%; /* Near black */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 10%; /* Near black */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 10%; /* Near black */
+    --primary: 220 65% 55%; /* Rich blue */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 220 15% 90%; /* Light blue-gray */
+    --secondary-foreground: 220 65% 25%; /* Darker blue */
+    --muted: 220 15% 90%; /* Light blue-gray */
+    --muted-foreground: 220 15% 45%; /* Medium blue-gray */
+    --accent: 220 15% 90%; /* Light blue-gray */
+    --accent-foreground: 220 65% 25%; /* Darker blue */
+    --destructive: 0 84.2% 60.2%; /* Keep original red */
+    --destructive-foreground: 0 0% 98%; /* Near white */
+    --border: 220 15% 80%; /* Light gray border with blue tint */
+    --input: 220 15% 90%; /* Light input with blue tint */
+    --ring: 220 65% 55%; /* Match primary blue */
     --radius: 0.5rem;
   }
 }

@@ -23,7 +23,7 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div className="absolute inset-0 bg-primary bg-opacity-80"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="flex items-center gap-2">
             <Globe className="h-4 w-4" />
             <Select onValueChange={handleLanguageChange} defaultValue={language}>
-              <SelectTrigger className="w-[140px] bg-primary-foreground text-primary">
+              <SelectTrigger className="w-[140px] bg-white text-primary">
                 <SelectValue placeholder="Select language" />
               </SelectTrigger>
               <SelectContent>
