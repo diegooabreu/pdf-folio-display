@@ -13,8 +13,20 @@ const Hero = () => {
   };
 
   return (
-    <div className="py-20 bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4">
+    <div className="py-20 bg-primary text-primary-foreground relative">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex justify-end mb-4">
           <div className="flex items-center gap-2">
             <Globe className="h-4 w-4" />
