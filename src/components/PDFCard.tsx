@@ -10,9 +10,12 @@ interface PDFCardProps {
   description: string;
   downloadUrl: string;
   imageUrl: string;
+  pdfFileName?: string;
 }
 
-const PDFCard = ({ title, description, downloadUrl, imageUrl }: PDFCardProps) => {
+const PDFCard = ({ title, description, downloadUrl, imageUrl, pdfFileName }: PDFCardProps) => {
+  const downloadFileName = pdfFileName || `${title.toLowerCase().replace(/\s+/g, '-')}-catalog.pdf`;
+  
   return (
     <Card className="w-full transition-all duration-300 hover:shadow-lg">
       <div className="relative">
@@ -39,7 +42,7 @@ const PDFCard = ({ title, description, downloadUrl, imageUrl }: PDFCardProps) =>
           </a>
         </Button>
         <Button asChild className="w-full">
-          <a href={downloadUrl} download>
+          <a href={downloadUrl} download={downloadFileName}>
             <Download className="mr-2 h-4 w-4" />
             Download Catalog
           </a>

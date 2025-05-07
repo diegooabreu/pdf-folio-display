@@ -5,6 +5,11 @@ import PDFCard from '../components/PDFCard';
 import Contact from '../components/Contact';
 import { useLanguage } from '../contexts/LanguageContext';
 
+// Import PDFs if you've added them to the project
+import motorolaPdf from '/lovable-uploads/motorola-catalog.pdf';
+import samsungPdf from '/lovable-uploads/samsung-catalog.pdf';
+import lgPdf from '/lovable-uploads/lg-catalog.pdf';
+
 const Index = () => {
   const { t } = useLanguage();
   
@@ -12,20 +17,23 @@ const Index = () => {
     {
       title: "Motorola",
       description: "Leading manufacturer of mobile phones and telecommunications equipment",
-      downloadUrl: "#",
+      downloadUrl: motorolaPdf,
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+      pdfFileName: "motorola-product-catalog.pdf"
     },
     {
       title: "Samsung",
       description: "Global leader in electronics, mobile devices, and home appliances",
-      downloadUrl: "#",
+      downloadUrl: samsungPdf,
       imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+      pdfFileName: "samsung-product-catalog.pdf"
     },
     {
       title: "LG",
       description: "Premium electronics and appliances manufacturer",
-      downloadUrl: "#",
+      downloadUrl: lgPdf,
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      pdfFileName: "lg-product-catalog.pdf"
     },
   ];
 
@@ -42,6 +50,7 @@ const Index = () => {
               description={item.description}
               downloadUrl={item.downloadUrl}
               imageUrl={item.imageUrl}
+              pdfFileName={item.pdfFileName}
             />
           ))}
         </div>
