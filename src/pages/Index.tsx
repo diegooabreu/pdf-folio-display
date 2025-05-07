@@ -18,21 +18,21 @@ const Index = () => {
       title: "Yamá",
       description: "Leading manufacturer of mobile phones and telecommunications equipment",
       downloadUrl: yamaPdf,
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+      imageUrl: "/lovable-uploads/Logo - Yama Beauty.jpg",
       pdfFileName: "CATALOGO YAMA_VERSAO COMPLETA_LANCAMENTOS2024.pdf"
     },
     {
       title: "Bellesa",
       description: "Global leader in electronics, mobile devices, and home appliances",
       downloadUrl: bellesaPdf,
-      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+      imageUrl: "/lovable-uploads/logo bellesa.png",
       pdfFileName: "CATALOGO BELLESA 2025_compressed.pdf"
     },
     {
       title: "Nuance",
       description: "Premium electronics and appliances manufacturer",
       downloadUrl: nuancePdf,
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      imageUrl: "/lovable-uploads/logo nuance.png",
       pdfFileName: "CATALOGO NUANCE - NOV 2024.pdf"
     },
   ];

@@ -23,11 +23,11 @@ const PDFCard = ({ title, description, downloadUrl, imageUrl, pdfFileName }: PDF
     <>
       <Card className="w-full transition-all duration-300 hover:shadow-lg">
         <div className="relative">
-          <AspectRatio ratio={16 / 9}>
+          <AspectRatio ratio={16 / 9} className="bg-white flex items-center justify-center p-4">
             <img
               src={imageUrl}
-              alt={title}
-              className="object-cover w-full h-full rounded-t-lg"
+              alt={`${title} logo`}
+              className="object-contain max-h-full"
             />
           </AspectRatio>
         </div>
