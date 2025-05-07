@@ -6,34 +6,35 @@ import Contact from '../components/Contact';
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Import PDFs if you've added them to the project
-import motorolaPdf from '/lovable-uploads/motorola-catalog.pdf';
-import samsungPdf from '/lovable-uploads/samsung-catalog.pdf';
-import lgPdf from '/lovable-uploads/lg-catalog.pdf';
+// Note: You'll need to upload these PDF files to the project
+import yamaPdf from '../assets/yama-catalog.pdf';
+import bellesaPdf from '../assets/bellesa-catalog.pdf';
+import nuancePdf from '../assets/nuance-catalog.pdf';
 
 const Index = () => {
   const { t } = useLanguage();
   
   const portfolioItems = [
     {
-      title: "Motorola",
+      title: "Yamá",
       description: "Leading manufacturer of mobile phones and telecommunications equipment",
-      downloadUrl: motorolaPdf,
+      downloadUrl: yamaPdf,
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-      pdfFileName: "motorola-product-catalog.pdf"
+      pdfFileName: "yama-product-catalog.pdf"
     },
     {
-      title: "Samsung",
+      title: "Bellesa",
       description: "Global leader in electronics, mobile devices, and home appliances",
-      downloadUrl: samsungPdf,
+      downloadUrl: bellesaPdf,
       imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-      pdfFileName: "samsung-product-catalog.pdf"
+      pdfFileName: "bellesa-product-catalog.pdf"
     },
     {
-      title: "LG",
+      title: "Nuance",
       description: "Premium electronics and appliances manufacturer",
-      downloadUrl: lgPdf,
+      downloadUrl: nuancePdf,
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-      pdfFileName: "lg-product-catalog.pdf"
+      pdfFileName: "nuance-product-catalog.pdf"
     },
   ];
 
