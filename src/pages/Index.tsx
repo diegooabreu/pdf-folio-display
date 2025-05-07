@@ -5,11 +5,10 @@ import PDFCard from '../components/PDFCard';
 import Contact from '../components/Contact';
 import { useLanguage } from '../contexts/LanguageContext';
 
-// Import PDFs if you've added them to the project
-// Note: You'll need to upload these PDF files to the project
-import yamaPdf from '../assets/yama-catalog.pdf';
-import bellesaPdf from '../assets/bellesa-catalog.pdf';
-import nuancePdf from '../assets/nuance-catalog.pdf';
+// Import the uploaded PDF files
+const yamaPdf = '/lovable-uploads/CATALOGO YAMA_VERSAO COMPLETA_LANCAMENTOS2024.pdf';
+const bellesaPdf = '/lovable-uploads/CATALOGO BELLESA 2025_compressed.pdf';
+const nuancePdf = '/lovable-uploads/CATALOGO NUANCE - NOV 2024.pdf';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -20,21 +19,21 @@ const Index = () => {
       description: "Leading manufacturer of mobile phones and telecommunications equipment",
       downloadUrl: yamaPdf,
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-      pdfFileName: "yama-product-catalog.pdf"
+      pdfFileName: "CATALOGO YAMA_VERSAO COMPLETA_LANCAMENTOS2024.pdf"
     },
     {
       title: "Bellesa",
       description: "Global leader in electronics, mobile devices, and home appliances",
       downloadUrl: bellesaPdf,
       imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-      pdfFileName: "bellesa-product-catalog.pdf"
+      pdfFileName: "CATALOGO BELLESA 2025_compressed.pdf"
     },
     {
       title: "Nuance",
       description: "Premium electronics and appliances manufacturer",
       downloadUrl: nuancePdf,
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-      pdfFileName: "nuance-product-catalog.pdf"
+      pdfFileName: "CATALOGO NUANCE - NOV 2024.pdf"
     },
   ];
 
