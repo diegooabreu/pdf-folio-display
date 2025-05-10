@@ -23,7 +23,7 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-primary bg-opacity-80"></div>
+        {/* Removed the blue transparent overlay div */}
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
