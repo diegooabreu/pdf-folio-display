@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, FileText, Eye, EyeOff } from "lucide-react";
+import { Download, FileText, Eye } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface PDFCardProps {
@@ -22,15 +22,17 @@ const PDFCard = ({ title, description, downloadUrl, imageUrl, pdfFileName }: PDF
   return (
     <>
       <Card className="w-full transition-all duration-300 hover:shadow-lg">
-        <div className="relative">
-          <AspectRatio ratio={16 / 9} className="bg-white flex items-center justify-center p-4">
-            <img
-              src={imageUrl}
-              alt={`${title} logo`}
-              className="object-contain max-h-full"
-            />
-          </AspectRatio>
-        </div>
+        <AspectRatio ratio={16 / 9} className="bg-white flex items-center justify-center p-4 border-b">
+          <img
+            src={imageUrl}
+            alt={`${title} logo`}
+            className="object-contain h-full max-h-32 w-auto"
+            onError={(e) => {
+              console.error(`Failed to load image: ${imageUrl}`);
+              e.currentTarget.src = '/placeholder.svg';
+            }}
+          />
+        </AspectRatio>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <FileText className="h-5 w-5" />
@@ -60,6 +62,7 @@ const PDFCard = ({ title, description, downloadUrl, imageUrl, pdfFileName }: PDF
         <DialogContent className="max-w-4xl h-[90vh]">
           <DialogHeader>
             <DialogTitle>Catálogo {title}</DialogTitle>
+            <DialogDescription>Visualização do catálogo de produtos</DialogDescription>
           </DialogHeader>
           <ScrollArea className="h-full w-full">
             <div className="h-[80vh] w-full">

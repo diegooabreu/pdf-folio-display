@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <div className="py-20 bg-primary text-primary-foreground relative">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div 
         className="absolute inset-0 z-0" 
         style={{
@@ -22,9 +22,7 @@ const Hero = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      >
-        {/* Removed the blue transparent overlay div */}
-      </div>
+      />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex justify-end mb-4">
@@ -46,6 +44,10 @@ const Hero = () => {
             src={Logo} 
             alt="Maica Logo" 
             className="h-16 w-16 object-contain"
+            onError={(e) => {
+              console.error("Failed to load logo");
+              e.currentTarget.src = '/placeholder.svg';
+            }}
           />
           <h1 className="text-4xl md:text-6xl font-modern font-bold tracking-tight">{t('heroTitle')}</h1>
         </div>
